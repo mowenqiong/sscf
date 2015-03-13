@@ -14,6 +14,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         println("absadfsaf")
         println(123)
+        
+        
+        println("zengchang")
         // Do any additional setup after loading the view, typically from a nib.
     }
 
