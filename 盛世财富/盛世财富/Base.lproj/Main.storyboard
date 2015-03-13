@@ -5,10 +5,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--主页-->
         <scene sceneID="vna-Pa-jZe">
             <objects>
-                <tabBarController id="T6v-wi-K0w" sceneMemberID="viewController">
+                <tabBarController id="T6v-wi-K0w" userLabel="主页" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="t9W-2w-lq9"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="PKJ-Oh-QAM">
@@ -205,10 +205,10 @@
             </objects>
             <point key="canvasLocation" x="29" y="699"/>
         </scene>
-        <!--View Controller-->
+        <!--用户注册-->
         <scene sceneID="bS7-lj-EC9">
             <objects>
-                <viewController id="NOo-ud-8Ye" sceneMemberID="viewController">
+                <viewController title="用户注册" id="NOo-ud-8Ye" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="u4k-XV-oDY"/>
                         <viewControllerLayoutGuide type="bottom" id="OLZ-ck-MM7"/>
