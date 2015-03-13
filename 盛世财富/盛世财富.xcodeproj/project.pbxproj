@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E9D6604D1AB1313B0020982D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D6604C1AB1313B0020982D /* AppDelegate.swift */; };
-		E9D6604F1AB1313B0020982D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D6604E1AB1313B0020982D /* ViewController.swift */; };
+		E9D6604F1AB1313B0020982D /* LendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D6604E1AB1313B0020982D /* LendViewController.swift */; };
 		E9D660521AB1313B0020982D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D660501AB1313B0020982D /* Main.storyboard */; };
 		E9D660541AB1313B0020982D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9D660531AB1313B0020982D /* Images.xcassets */; };
 		E9D660571AB1313B0020982D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D660551AB1313B0020982D /* LaunchScreen.xib */; };
@@ -29,7 +29,7 @@
 		E9D660471AB1313B0020982D /* 盛世财富.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "盛世财富.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D6604B1AB1313B0020982D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9D6604C1AB1313B0020982D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E9D6604E1AB1313B0020982D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E9D6604E1AB1313B0020982D /* LendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendViewController.swift; sourceTree = "<group>"; };
 		E9D660511AB1313B0020982D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9D660531AB1313B0020982D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E9D660561AB1313B0020982D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 		E91E81321AB27956000C5FD3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E9D6604E1AB1313B0020982D /* ViewController.swift */,
+				E9D6604E1AB1313B0020982D /* LendViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -252,7 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9D6604F1AB1313B0020982D /* ViewController.swift in Sources */,
+				E9D6604F1AB1313B0020982D /* LendViewController.swift in Sources */,
 				E9D6604D1AB1313B0020982D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
