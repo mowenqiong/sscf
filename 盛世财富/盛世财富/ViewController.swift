@@ -17,6 +17,9 @@ class ViewController: UIViewController {
         
         
         println("zengchang")
+        
+        
+        println("jiangfei")
         // Do any additional setup after loading the view, typically from a nib.
     }
 
