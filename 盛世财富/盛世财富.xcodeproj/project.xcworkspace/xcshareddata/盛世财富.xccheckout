@@ -5,7 +5,11 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
+<<<<<<< Updated upstream
 	<string>1E28374E-3D17-4C1D-9CD8-CB3B9AE145AB</string>
+=======
+	<string>DFB8FCB3-3A08-4E06-AE9C-1320D52E3E35</string>
+>>>>>>> Stashed changes
 	<key>IDESourceControlProjectName</key>
 	<string>盛世财富</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -34,7 +38,11 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>E45AA6F232656EE06953D3124D41E939A60EDFD0</string>
 			<key>IDESourceControlWCCName</key>
+<<<<<<< Updated upstream
 			<string>sscf</string>
+=======
+			<string>github:sscf</string>
+>>>>>>> Stashed changes
 		</dict>
 	</array>
 </dict>
