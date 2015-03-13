@@ -12,7 +12,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        var number:Int = 12
+        
+        println("number:\(number)")
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
