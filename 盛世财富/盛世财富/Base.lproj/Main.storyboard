@@ -69,7 +69,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="理财" id="t5o-7d-mUU"/>
-                    <navigationItem key="navigationItem" id="MSD-f0-OjM"/>
+                    <navigationItem key="navigationItem" title="理财" id="MSD-f0-OjM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -87,23 +87,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="更多" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dO9-gQ-BJP">
-                                <rect key="frame" x="233" y="394" width="34" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Rmt-4H-qjT">
+                                <rect key="frame" x="16" y="228" width="568" height="263"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8XD-wL-VGj">
+                                <rect key="frame" x="16" y="72" width="568" height="137"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="137" id="9cI-AI-ZOb"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Rmt-4H-qjT" firstAttribute="leading" secondItem="886-VF-LHe" secondAttribute="leadingMargin" id="8MT-aV-Er4"/>
+                            <constraint firstItem="8XD-wL-VGj" firstAttribute="top" secondItem="hHa-0n-H7I" secondAttribute="bottom" constant="8" id="Ao5-VZ-ubP"/>
+                            <constraint firstItem="Rmt-4H-qjT" firstAttribute="trailing" secondItem="886-VF-LHe" secondAttribute="trailingMargin" id="VX3-ak-zq5"/>
+                            <constraint firstItem="8XD-wL-VGj" firstAttribute="trailing" secondItem="886-VF-LHe" secondAttribute="trailingMargin" id="eJx-4r-4BU"/>
+                            <constraint firstItem="Rmt-4H-qjT" firstAttribute="top" secondItem="8XD-wL-VGj" secondAttribute="bottom" constant="19" id="j11-uW-2lp"/>
+                            <constraint firstItem="8XD-wL-VGj" firstAttribute="leading" secondItem="886-VF-LHe" secondAttribute="leadingMargin" id="q85-Gn-qFR"/>
+                            <constraint firstAttribute="centerX" secondItem="8XD-wL-VGj" secondAttribute="centerX" id="rvr-Mm-YOM"/>
+                            <constraint firstItem="kYz-AS-ZAe" firstAttribute="top" secondItem="Rmt-4H-qjT" secondAttribute="bottom" constant="60" id="xVf-oY-CrO"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="更多" id="hvD-1w-B8H"/>
-                    <navigationItem key="navigationItem" id="bfU-xY-bWG"/>
+                    <navigationItem key="navigationItem" title="更多" id="bfU-xY-bWG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aW0-ms-fgi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="35" y="-799"/>
         </scene>
-        <!--View Controller-->
+        <!--个人中心-->
         <scene sceneID="7he-BQ-R6i">
             <objects>
                 <viewController id="urV-rP-FXK" sceneMemberID="viewController">
@@ -114,17 +128,9 @@
                     <view key="view" contentMode="scaleToFill" id="LMv-vl-4VP">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="test" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQR-4g-XOB">
-                                <rect key="frame" x="146" y="271" width="29" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="7fF-WX-zxw"/>
+                    <navigationItem key="navigationItem" title="个人中心" id="7fF-WX-zxw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nCw-Jj-upg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -200,7 +206,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="个人中心" id="unT-uw-Muo"/>
                     <navigationItem key="navigationItem" title="用户登录" id="MU7-hY-C97">
-                        <barButtonItem key="rightBarButtonItem" title="注册" id="bKC-mg-FRb"/>
+                        <barButtonItem key="rightBarButtonItem" title="注册" id="bKC-mg-FRb">
+                            <connections>
+                                <segue destination="NOo-ud-8Ye" kind="push" id="PkE-lm-hhc"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K5r-Og-7Df" userLabel="First Responder" sceneMemberID="firstResponder"/>
