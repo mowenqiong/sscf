@@ -171,7 +171,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="urV-rP-FXK" kind="push" id="C6J-Dw-e6c"/>
+                                    <segue destination="urV-rP-FXK" kind="show" id="C6J-Dw-e6c"/>
                                 </connections>
                             </button>
                         </subviews>
