@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var birthday: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        println(123)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
