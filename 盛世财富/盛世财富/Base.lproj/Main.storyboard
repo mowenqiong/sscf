@@ -88,7 +88,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="更多" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dO9-gQ-BJP">
-                                <rect key="frame" x="233" y="394" width="34" height="21"/>
+                                <rect key="frame" x="290" y="289" width="34" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -166,7 +166,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="urV-rP-FXK" kind="push" id="C6J-Dw-e6c"/>
+                                    <segue destination="urV-rP-FXK" kind="show" id="C6J-Dw-e6c"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tfe-73-zmd">
@@ -207,10 +207,10 @@
             </objects>
             <point key="canvasLocation" x="29" y="699"/>
         </scene>
-        <!--View Controller-->
+        <!--用户注册-->
         <scene sceneID="bS7-lj-EC9">
             <objects>
-                <viewController id="NOo-ud-8Ye" sceneMemberID="viewController">
+                <viewController title="用户注册" id="NOo-ud-8Ye" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="u4k-XV-oDY"/>
                         <viewControllerLayoutGuide type="bottom" id="OLZ-ck-MM7"/>

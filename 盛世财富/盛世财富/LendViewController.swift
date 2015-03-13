@@ -12,23 +12,19 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        println("absadfsaf")
-        println(123)
+        
+        var number:Int = 1211
+        
+        println("number:\(number)")
         
         
-        println("zengchang")
+        ///sdafsadfasdf
         
-        
-        println("jiangfei1111")
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        println(123456)
-        println("xiao")
-        // Dispose of any resources that can be recreated.
+        
     }
 
 }
-
