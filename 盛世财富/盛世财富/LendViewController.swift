@@ -14,11 +14,25 @@ class LendViewController: UIViewController,UITableViewDataSource,UITableViewDele
     
     @IBOutlet weak var mainTable: UITableView!
     
-	
-   // var timer:NSTimer = NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: "timerFunction", userInfo: nil, repeats: true)
+    @IBOutlet weak var topImage: UIImageView!
+    var timer:NSTimer?
+    
+    var count = 1
+    func timerFunction(){
+        
+        topImage.image = UIImage(named: String(count)+".jpg")
+        count++
+        if count > 4 {
+            count = 1
+        }
+    }
+        
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-                
+        timer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "timerFunction", userInfo: nil, repeats: true)
+        timer?.fire()
     }
 
     override func didReceiveMemoryWarning() {
