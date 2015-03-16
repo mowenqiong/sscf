@@ -13,6 +13,9 @@
 		E9D660541AB1313B0020982D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9D660531AB1313B0020982D /* Images.xcassets */; };
 		E9D660571AB1313B0020982D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D660551AB1313B0020982D /* LaunchScreen.xib */; };
 		E9D660631AB1313B0020982D /* ____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D660621AB1313B0020982D /* ____Tests.swift */; };
+		E9EEC97C1AB687C700E09442 /* PersonCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EEC97B1AB687C700E09442 /* PersonCenterViewController.swift */; };
+		E9EEC97E1AB6A56600E09442 /* aaa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9EEC97D1AB6A56600E09442 /* aaa.jpg */; };
+		E9EEC9801AB6C45700E09442 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EEC97F1AB6C45700E09442 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		E9D6605C1AB1313B0020982D /* 盛世财富Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "盛世财富Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D660611AB1313B0020982D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9D660621AB1313B0020982D /* ____Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "____Tests.swift"; sourceTree = "<group>"; };
+		E9EEC97B1AB687C700E09442 /* PersonCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCenterViewController.swift; sourceTree = "<group>"; };
+		E9EEC97D1AB6A56600E09442 /* aaa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aaa.jpg; sourceTree = "<group>"; };
+		E9EEC97F1AB6C45700E09442 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 		E91E81311AB2794D000C5FD3 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				E9EEC97D1AB6A56600E09442 /* aaa.jpg */,
 				E9D6604C1AB1313B0020982D /* AppDelegate.swift */,
 			);
 			name = Source;
@@ -76,6 +83,8 @@
 		E91E81321AB27956000C5FD3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E9EEC97F1AB6C45700E09442 /* DetailViewController.swift */,
+				E9EEC97B1AB687C700E09442 /* PersonCenterViewController.swift */,
 				E9D6604E1AB1313B0020982D /* LendViewController.swift */,
 			);
 			name = Controllers;
@@ -233,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E95DD7E51AB2D2470011311E /* Main.storyboard in Resources */,
+				E9EEC97E1AB6A56600E09442 /* aaa.jpg in Resources */,
 				E9D660571AB1313B0020982D /* LaunchScreen.xib in Resources */,
 				E9D660541AB1313B0020982D /* Images.xcassets in Resources */,
 			);
@@ -252,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9EEC9801AB6C45700E09442 /* DetailViewController.swift in Sources */,
 				E9D6604F1AB1313B0020982D /* LendViewController.swift in Sources */,
+				E9EEC97C1AB687C700E09442 /* PersonCenterViewController.swift in Sources */,
 				E9D6604D1AB1313B0020982D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
