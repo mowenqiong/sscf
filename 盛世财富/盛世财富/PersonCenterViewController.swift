@@ -162,7 +162,7 @@ class PersonCenterViewController: UIViewController,UITableViewDataSource,UITable
         var section:Int =  (self.tableView.indexPathForSelectedRow()?.section)!
         //每一行的索引
         var row:Int = (self.tableView.indexPathForSelectedRow()?.row)!
-        var detailViewController:DetailViewController = segue.destinationViewController as DetailViewController
+//        var detailViewController:DetailViewController = segue.destinationViewController as DetailViewController
         //此处执行传值操作
         var topTitle:String!
         
@@ -193,7 +193,7 @@ class PersonCenterViewController: UIViewController,UITableViewDataSource,UITable
             topTitle = nil
         }
         
-        detailViewController.topTitle = topTitle
+//        detailViewController.topTitle = topTitle
     }
 }
 
