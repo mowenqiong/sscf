@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E95DD7E51AB2D2470011311E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E95DD7E31AB2D2470011311E /* Main.storyboard */; };
 		E96B1E731AB6BFB300C61870 /* AllListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96B1E721AB6BFB300C61870 /* AllListViewController.swift */; };
+		E9C54E061AB7BCD400D4722C /* LendDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C54E051AB7BCD400D4722C /* LendDetailViewController.swift */; };
 		E9D6604D1AB1313B0020982D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D6604C1AB1313B0020982D /* AppDelegate.swift */; };
 		E9D6604F1AB1313B0020982D /* LendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D6604E1AB1313B0020982D /* LendViewController.swift */; };
 		E9D660541AB1313B0020982D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9D660531AB1313B0020982D /* Images.xcassets */; };
@@ -16,7 +17,6 @@
 		E9D660631AB1313B0020982D /* ____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D660621AB1313B0020982D /* ____Tests.swift */; };
 		E9EEC97C1AB687C700E09442 /* PersonCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EEC97B1AB687C700E09442 /* PersonCenterViewController.swift */; };
 		E9EEC97E1AB6A56600E09442 /* aaa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9EEC97D1AB6A56600E09442 /* aaa.jpg */; };
-		E9EEC9801AB6C45700E09442 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EEC97F1AB6C45700E09442 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +32,7 @@
 /* Begin PBXFileReference section */
 		E95DD7E41AB2D2470011311E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E96B1E721AB6BFB300C61870 /* AllListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllListViewController.swift; sourceTree = "<group>"; };
+		E9C54E051AB7BCD400D4722C /* LendDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LendDetailViewController.swift; sourceTree = "<group>"; };
 		E9D660471AB1313B0020982D /* 盛世财富.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "盛世财富.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D6604B1AB1313B0020982D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9D6604C1AB1313B0020982D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +90,7 @@
 				E9EEC97B1AB687C700E09442 /* PersonCenterViewController.swift */,
 				E9D6604E1AB1313B0020982D /* LendViewController.swift */,
 				E96B1E721AB6BFB300C61870 /* AllListViewController.swift */,
+				E9C54E051AB7BCD400D4722C /* LendDetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -265,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9C54E061AB7BCD400D4722C /* LendDetailViewController.swift in Sources */,
 				E96B1E731AB6BFB300C61870 /* AllListViewController.swift in Sources */,
 				E9D6604F1AB1313B0020982D /* LendViewController.swift in Sources */,
 				E9EEC97C1AB687C700E09442 /* PersonCenterViewController.swift in Sources */,
