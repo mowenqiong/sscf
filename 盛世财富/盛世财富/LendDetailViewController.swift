@@ -34,7 +34,7 @@ class LendDetailViewController: UIViewController ,UITableViewDataSource,UITableV
         switch indexPath.row {
         case 0:
             cell = self.mainTable.dequeueReusableCellWithIdentifier("bidDetail") as UITableViewCell
-            ß
+            
         case 1:
             cell = self.mainTable.dequeueReusableCellWithIdentifier("bidIntroduce") as UITableViewCell
         case 2:
