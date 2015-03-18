@@ -25,48 +25,42 @@ class LendDetailViewController: UIViewController ,UITableViewDataSource,UITableV
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        if section.hashValue == 0 {
-            return 1
-        }else if section.hashValue == 1  {
-            return 2
-        }else if section.hashValue == 2  {
-            return 1
-        }else if section.hashValue == 3  {
-            return 1
-        }else if section.hashValue == 4  {
-            return 1
-        }else {
-            return 0
-        }
+        return 5
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = self.mainTable.dequeueReusableCellWithIdentifier("list") as UITableViewCell
+        var cell:UITableViewCell!
         
+        switch indexPath.row {
+        case 0:
+            cell = self.mainTable.dequeueReusableCellWithIdentifier("bidDetail") as UITableViewCell
+            ß
+        case 1:
+            cell = self.mainTable.dequeueReusableCellWithIdentifier("bidIntroduce") as UITableViewCell
+        case 2:
+            
+            cell = self.mainTable.dequeueReusableCellWithIdentifier("bidProtocol") as UITableViewCell
+        case 3:
+            cell = self.mainTable.dequeueReusableCellWithIdentifier("userInfo") as UITableViewCell
+        case 4:
+            cell = self.mainTable.dequeueReusableCellWithIdentifier("creditProfile") as UITableViewCell
+        default: cell = nil
+        }
         return cell
         
     }
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 4
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat{
+        var val = indexPath.section.hashValue
+        var row = indexPath.row
+        if row == 1{
+            return 230
+        }
+        if row == 2{
+            return 30
+        }
+        return 130
     }
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat{
-        var sec = indexPath.section.hashValue
-        var row = indexPath.row
-        switch sec {
-        case 0:return 130
-        case 1:
-            if row == 0 {
-                return 150
-            }else {
-                return 30
-            }
-        case 2:return 130
-        case 3:return 130
-        default:return 0
-        }
-//        return 150
-    }
-
+    
 }
 

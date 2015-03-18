@@ -31,7 +31,7 @@ class LendViewController: UIViewController,UITableViewDataSource,UITableViewDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        timer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "timerFunction", userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: "timerFunction", userInfo: nil, repeats: true)
         timer?.fire()
     }
 
@@ -58,8 +58,10 @@ class LendViewController: UIViewController,UITableViewDataSource,UITableViewDele
         var title = cell.viewWithTag(101) as UILabel
         var content = cell.viewWithTag(102) as UILabel
         //写死内容
+        
         var val = indexPath.section.hashValue
         var row = indexPath.row
+        
         if val == 0{
             if row == 0 {
                 title.text = "产品1"
@@ -82,10 +84,8 @@ class LendViewController: UIViewController,UITableViewDataSource,UITableViewDele
                 content.text = "产品5的说明"
             }
         }
-        if val == 1{
-            title.text = "用户名"
-            content.text = "可用余额：0.00元"
-        }
+        
+        
         return cell
         
     }

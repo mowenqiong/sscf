@@ -14,6 +14,7 @@ class AllListViewController: UIViewController ,UITableViewDataSource,UITableView
     @IBOutlet weak var mainTable: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -29,7 +30,7 @@ class AllListViewController: UIViewController ,UITableViewDataSource,UITableView
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = self.mainTable.dequeueReusableCellWithIdentifier("allList") as UITableViewCell
         
-               
+        
         
         return cell
         
