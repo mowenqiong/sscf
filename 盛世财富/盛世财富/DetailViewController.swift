@@ -1,21 +1,27 @@
 //
-//  CalleryController.swift
-//  BeautyCallery
+//   DetailViewController.swift
+//  盛世财富
 //
-//  Created by zengchang on 15-3-1.
-//  Copyright (c) 2015年 zengchang. All rights reserved.
+//  Created by xiao on 15-3-19.
+//  Copyright (c) 2015年 sscf88. All rights reserved.
 //
+
+
+
 import UIKit
 
-class DetailViewController:UIViewController {
-    var topTitle:String!
+class DetailViewController: UIViewController {
+
     override func viewDidLoad() {
-        navigationItem.title = topTitle
-//      navigationItem.leftBarButtonItem?.title = "返回"
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
+        // Dispose of any resources that can be recreated.
     }
+
+
 }
+

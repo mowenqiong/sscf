@@ -13,12 +13,15 @@ import UIKit
 class LendDetailViewController: UIViewController ,UITableViewDataSource,UITableViewDelegate{
 
     @IBOutlet weak var mainTable: UITableView!
+    @IBOutlet weak var btmBar: UIToolbar!
     override func viewDidLoad() {
         super.viewDidLoad()
         mainTable.delegate = self
+       
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+	
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
