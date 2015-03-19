@@ -110,18 +110,7 @@
 		E91E81321AB27956000C5FD3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E98EE1581ABAD14D00CAE127 /* AccountSafeViewController.swift */,
-				E98EE1561ABAD14800CAE127 /* AccountDetailViewController.swift */,
-				E98EE1521ABAD13300CAE127 /* TradePasswordViewController.swift */,
-				E98EE1501ABAD12B00CAE127 /* ReturnSearchViewController.swift */,
-				E98EE14E1ABAD12600CAE127 /* RealNameViewController.swift */,
-				E98EE14C1ABAD11F00CAE127 /* MyBanksViewController.swift */,
-				E98EE14A1ABAD11B00CAE127 /* MoneyManagerViewController.swift */,
-				E98EE1481ABAD10900CAE127 /* FinanceManagerViewController.swift */,
-				E98EE1461ABAD0F100CAE127 /* BindPhoneViewController.swift */,
-				E98EE1441ABAD0CF00CAE127 /* TransRecordViewController.swift */,
-				E98EE1421ABAD04100CAE127 /* DetailViewController.swift */,
-				E98EE1401ABAD02200CAE127 /* PersonCenterViewController.swift */,
+				E98EE15A1ABAD3EC00CAE127 /* PersonCenter */,
 				E9D6604E1AB1313B0020982D /* LendViewController.swift */,
 				E96B1E721AB6BFB300C61870 /* AllListViewController.swift */,
 				E9C54E051AB7BCD400D4722C /* LendDetailViewController.swift */,
@@ -142,6 +131,25 @@
 				E9D660531AB1313B0020982D /* Images.xcassets */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		E98EE15A1ABAD3EC00CAE127 /* PersonCenter */ = {
+			isa = PBXGroup;
+			children = (
+				E98EE1581ABAD14D00CAE127 /* AccountSafeViewController.swift */,
+				E98EE1561ABAD14800CAE127 /* AccountDetailViewController.swift */,
+				E98EE1521ABAD13300CAE127 /* TradePasswordViewController.swift */,
+				E98EE1501ABAD12B00CAE127 /* ReturnSearchViewController.swift */,
+				E98EE14E1ABAD12600CAE127 /* RealNameViewController.swift */,
+				E98EE14C1ABAD11F00CAE127 /* MyBanksViewController.swift */,
+				E98EE14A1ABAD11B00CAE127 /* MoneyManagerViewController.swift */,
+				E98EE1481ABAD10900CAE127 /* FinanceManagerViewController.swift */,
+				E98EE1461ABAD0F100CAE127 /* BindPhoneViewController.swift */,
+				E98EE1441ABAD0CF00CAE127 /* TransRecordViewController.swift */,
+				E98EE1421ABAD04100CAE127 /* DetailViewController.swift */,
+				E98EE1401ABAD02200CAE127 /* PersonCenterViewController.swift */,
+			);
+			name = PersonCenter;
 			sourceTree = "<group>";
 		};
 		E9D6603E1AB1313B0020982D = {
