@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 //账户信息
-class AccountDetailViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class AccountDetailViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate,UIImagePickerControllerDelegate {
     @IBOutlet weak var tableView: UITableView!
     
     var imageView:UIImageView!
@@ -125,12 +125,23 @@ class AccountDetailViewController: UIViewController,UITableViewDelegate,UITableV
         return 50
     }
     
-//    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//        println("enter...\(section)")
-//        return 0
-//    }
-//    func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-//        println("enter...\(section)")
-//        return 0
-//    }
+    //设置点击cell的事件
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
+        if indexPath.section == 0{
+            var upc = UIImagePickerController()
+            //访问图片库
+            upc.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+            upc.delegate = self
+            
+            self.presentViewController(upc, animated: true, completion: nil)
+        }
+    }
+    
+    //重写方法，使之能访问图库
+    func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
+        imageView.image = image
+        println(image.size.height)
+        //此处可以将图片资源保存到数据库中
+        picker.dismissViewControllerAnimated(true, completion: nil)
+    }
 }
