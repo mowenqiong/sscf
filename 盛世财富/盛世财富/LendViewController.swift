@@ -28,6 +28,7 @@ class LendViewController: UIViewController,UITableViewDataSource,UITableViewDele
         }
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         timer = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: "timerFunction", userInfo: nil, repeats: true)
@@ -40,6 +41,14 @@ class LendViewController: UIViewController,UITableViewDataSource,UITableViewDele
         var swipeLeftGesture = UISwipeGestureRecognizer(target: self, action: "handleSwipeGesture:")
         swipeLeftGesture.direction = UISwipeGestureRecognizerDirection.Left //不设置是右
         self.view.addGestureRecognizer(swipeLeftGesture)
+        
+        
+        var tap = UITapGestureRecognizer(target: self, action: "tapImage:")
+        topImage.addGestureRecognizer(tap)
+    }
+    
+    func tapImage(sender: UITapGestureRecognizer){
+        println(1)
     }
     
     //划动手势
@@ -53,9 +62,10 @@ class LendViewController: UIViewController,UITableViewDataSource,UITableViewDele
             count++;//下标++
             break
         case UISwipeGestureRecognizerDirection.Right:
-            
+       
             count--;//下标--
             break
+            
         default:
             break;
         }
@@ -74,10 +84,16 @@ class LendViewController: UIViewController,UITableViewDataSource,UITableViewDele
         
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var lendDetail = segue.destinationViewController as LendDetailViewController
-        var allList = segue.destinationViewController as AllListViewController
-        allList.hidesBottomBarWhenPushed = true
-        lendDetail.hidesBottomBarWhenPushed = true
+        var nextView:UIViewController?
+        if segue.identifier == "detail"{
+            nextView = segue.destinationViewController as LendDetailViewController
+        }
+        if segue.identifier == "allList"{
+            nextView = segue.destinationViewController as AllListViewController
+        }
+        if nextView != nil {
+            nextView!.hidesBottomBarWhenPushed = true
+        }
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         if section.hashValue == 0 {
@@ -139,6 +155,7 @@ class LendViewController: UIViewController,UITableViewDataSource,UITableViewDele
         return 2
     }
     
+   
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 0{
             return "投资理财"
