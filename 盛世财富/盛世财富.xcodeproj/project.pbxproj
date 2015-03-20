@@ -23,6 +23,12 @@
 		E98EE1571ABAD14800CAE127 /* AccountDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EE1561ABAD14800CAE127 /* AccountDetailViewController.swift */; };
 		E98EE1591ABAD14D00CAE127 /* AccountSafeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EE1581ABAD14D00CAE127 /* AccountSafeViewController.swift */; };
 		E9C54E061AB7BCD400D4722C /* LendDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C54E051AB7BCD400D4722C /* LendDetailViewController.swift */; };
+		E9C605B21ABBB9C500752D91 /* Refresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C605AC1ABBB9C500752D91 /* Refresh.swift */; };
+		E9C605B31ABBB9C500752D91 /* RefreshBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C605AD1ABBB9C500752D91 /* RefreshBaseView.swift */; };
+		E9C605B41ABBB9C500752D91 /* RefreshConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C605AE1ABBB9C500752D91 /* RefreshConst.swift */; };
+		E9C605B51ABBB9C500752D91 /* RefreshFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C605AF1ABBB9C500752D91 /* RefreshFooterView.swift */; };
+		E9C605B61ABBB9C500752D91 /* RefreshHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C605B01ABBB9C500752D91 /* RefreshHeaderView.swift */; };
+		E9C605B71ABBB9C500752D91 /* UIScrollView+Refresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C605B11ABBB9C500752D91 /* UIScrollView+Refresh.swift */; };
 		E9D6604D1AB1313B0020982D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D6604C1AB1313B0020982D /* AppDelegate.swift */; };
 		E9D6604F1AB1313B0020982D /* LendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D6604E1AB1313B0020982D /* LendViewController.swift */; };
 		E9D660541AB1313B0020982D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9D660531AB1313B0020982D /* Images.xcassets */; };
@@ -58,6 +64,12 @@
 		E98EE1561ABAD14800CAE127 /* AccountDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountDetailViewController.swift; sourceTree = "<group>"; };
 		E98EE1581ABAD14D00CAE127 /* AccountSafeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountSafeViewController.swift; sourceTree = "<group>"; };
 		E9C54E051AB7BCD400D4722C /* LendDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LendDetailViewController.swift; sourceTree = "<group>"; };
+		E9C605AC1ABBB9C500752D91 /* Refresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Refresh.swift; sourceTree = "<group>"; };
+		E9C605AD1ABBB9C500752D91 /* RefreshBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshBaseView.swift; sourceTree = "<group>"; };
+		E9C605AE1ABBB9C500752D91 /* RefreshConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshConst.swift; sourceTree = "<group>"; };
+		E9C605AF1ABBB9C500752D91 /* RefreshFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshFooterView.swift; sourceTree = "<group>"; };
+		E9C605B01ABBB9C500752D91 /* RefreshHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshHeaderView.swift; sourceTree = "<group>"; };
+		E9C605B11ABBB9C500752D91 /* UIScrollView+Refresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Refresh.swift"; sourceTree = "<group>"; };
 		E9D660471AB1313B0020982D /* 盛世财富.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "盛世财富.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D6604B1AB1313B0020982D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9D6604C1AB1313B0020982D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +164,19 @@
 			name = PersonCenter;
 			sourceTree = "<group>";
 		};
+		E9C605AB1ABBB9C500752D91 /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				E9C605AC1ABBB9C500752D91 /* Refresh.swift */,
+				E9C605AD1ABBB9C500752D91 /* RefreshBaseView.swift */,
+				E9C605AE1ABBB9C500752D91 /* RefreshConst.swift */,
+				E9C605AF1ABBB9C500752D91 /* RefreshFooterView.swift */,
+				E9C605B01ABBB9C500752D91 /* RefreshHeaderView.swift */,
+				E9C605B11ABBB9C500752D91 /* UIScrollView+Refresh.swift */,
+			);
+			path = Refresh;
+			sourceTree = "<group>";
+		};
 		E9D6603E1AB1313B0020982D = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +198,7 @@
 		E9D660491AB1313B0020982D /* 盛世财富 */ = {
 			isa = PBXGroup;
 			children = (
+				E9C605AB1ABBB9C500752D91 /* Refresh */,
 				E91E81341AB27972000C5FD3 /* Resources */,
 				E91E81331AB27967000C5FD3 /* Models */,
 				E91E81321AB27956000C5FD3 /* Controllers */,
@@ -316,15 +342,21 @@
 				E98EE1471ABAD0F100CAE127 /* BindPhoneViewController.swift in Sources */,
 				E98EE1491ABAD10900CAE127 /* FinanceManagerViewController.swift in Sources */,
 				E98EE14B1ABAD11B00CAE127 /* MoneyManagerViewController.swift in Sources */,
+				E9C605B41ABBB9C500752D91 /* RefreshConst.swift in Sources */,
 				E96B1E731AB6BFB300C61870 /* AllListViewController.swift in Sources */,
+				E9C605B31ABBB9C500752D91 /* RefreshBaseView.swift in Sources */,
 				E98EE14F1ABAD12600CAE127 /* RealNameViewController.swift in Sources */,
+				E9C605B21ABBB9C500752D91 /* Refresh.swift in Sources */,
+				E9C605B51ABBB9C500752D91 /* RefreshFooterView.swift in Sources */,
 				E9D6604F1AB1313B0020982D /* LendViewController.swift in Sources */,
 				E98EE1531ABAD13300CAE127 /* TradePasswordViewController.swift in Sources */,
+				E9C605B61ABBB9C500752D91 /* RefreshHeaderView.swift in Sources */,
 				E98EE13F1ABACF6A00CAE127 /* SCLAlertView.swift in Sources */,
 				E98EE1411ABAD02200CAE127 /* PersonCenterViewController.swift in Sources */,
 				E9D6604D1AB1313B0020982D /* AppDelegate.swift in Sources */,
 				E98EE14D1ABAD11F00CAE127 /* MyBanksViewController.swift in Sources */,
 				E98EE1511ABAD12B00CAE127 /* ReturnSearchViewController.swift in Sources */,
+				E9C605B71ABBB9C500752D91 /* UIScrollView+Refresh.swift in Sources */,
 				E98EE1431ABAD04100CAE127 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
