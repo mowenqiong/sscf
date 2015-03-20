@@ -8,14 +8,22 @@
 
 import UIKit
 
-class PersonCenterViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
-
-//    required init(coder aDecoder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
+class PersonCenterViewController: UIViewController,UITableViewDataSource,UITableViewDelegate,UITextFieldDelegate {
+    
+    var txt:UITextField!
+    
+    //点击其他的地方隐藏键盘
+    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
+        txt.resignFirstResponder()
+    }
+    
+    //点击return隐藏键盘
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        txt.resignFirstResponder()
+        return true
+    }
     
     @IBOutlet weak var tableView: UITableView!
-    
     var recordsButton:UIButton!
     var searchButton:UIButton!
     override func viewDidLoad() {
@@ -31,20 +39,25 @@ class PersonCenterViewController: UIViewController,UITableViewDataSource,UITable
         searchButton.setTitle("回账查询", forState: UIControlState.Normal)
         searchButton.setTitleColor(UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1), forState: UIControlState.Normal)
         
-//        recordsButton.addTarget(self, action: "recordTapped:", forControlEvents: UIControlEvents.TouchUpInside)
-//        searchButton.addTarget(self, action: "searchTapped:", forControlEvents: UIControlEvents.TouchUpInside)
+        //为两个按钮绑定事件
+        recordsButton.addTarget(self, action: "recordTapped:", forControlEvents: UIControlEvents.TouchUpInside)
+        searchButton.addTarget(self, action: "searchTapped:", forControlEvents: UIControlEvents.TouchUpInside)
     }
     
     func recordTapped(sender:AnyObject){
-        println("你点击了记录")
+        var detail:TransRecordViewController = self.storyboard?.instantiateViewControllerWithIdentifier("transRecordViewController") as TransRecordViewController
+//        detail.topTitle = "交易记录"
+        self.presentViewController(detail, animated: true, completion: nil)
+        
     }
-    func searchButton(sender:AnyObject){
-        println("你点击了查询")
+    func searchTapped(sender:AnyObject){
+        var search:ReturnSearchViewController = self.storyboard?.instantiateViewControllerWithIdentifier("returnSearchViewController") as ReturnSearchViewController
+//        search.topTitle = "回账查询"
+        self.presentViewController(search, animated: true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
     }
     
     //每一组的行数
@@ -77,8 +90,6 @@ class PersonCenterViewController: UIViewController,UITableViewDataSource,UITable
                 cell.addSubview(nameLabel)
                 cell.addSubview(phoneLabel)
             }else{
-                
-                
                 cell.addSubview(recordsButton)
                 cell.addSubview(searchButton)
             }
@@ -94,7 +105,7 @@ class PersonCenterViewController: UIViewController,UITableViewDataSource,UITable
                 var moneyLabel = UILabel(frame: CGRect(x: 10, y: 10, width: 100, height: 20))
                 moneyLabel.text = "理财管理"
                 cell.addSubview(moneyLabel)
-            }else if indexPath.row == 1{
+            }else if indexPath.row == 2{
                 var moneyLabel = UILabel(frame: CGRect(x: 10, y: 10, width: 150, height: 20))
                 moneyLabel.text = "我的银行卡"
                 var phoneLabel = UILabel(frame: CGRect(x: 200, y: 10, width: 50, height: 20))
@@ -162,7 +173,7 @@ class PersonCenterViewController: UIViewController,UITableViewDataSource,UITable
         var section:Int =  (self.tableView.indexPathForSelectedRow()?.section)!
         //每一行的索引
         var row:Int = (self.tableView.indexPathForSelectedRow()?.row)!
-//        var detailViewController:DetailViewController = segue.destinationViewController as DetailViewController
+        var detailViewController:DetailViewController = segue.destinationViewController as DetailViewController
         //此处执行传值操作
         var topTitle:String!
         
@@ -193,7 +204,70 @@ class PersonCenterViewController: UIViewController,UITableViewDataSource,UITable
             topTitle = nil
         }
         
-//        detailViewController.topTitle = topTitle
+        detailViewController.topTitle = topTitle
+    }
+    
+    //用户点击cell之后的 callBack
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
+        //每一组的索引
+        var section:Int =  (self.tableView.indexPathForSelectedRow()?.section)!
+        //每一行的索引
+        var row:Int = (self.tableView.indexPathForSelectedRow()?.row)!
+        
+        var indentifer:String!
+        
+        switch section {
+        case 0 :
+            if row == 0{
+                indentifer = "accountDetailViewController"
+                var adv = self.storyboard?.instantiateViewControllerWithIdentifier(indentifer) as AccountDetailViewController
+                self.presentViewController(adv, animated: true, completion: nil)
+            }
+        case 1 :
+            if row == 0 {
+                indentifer = "moneyManagerViewController"
+                var adv = self.storyboard?.instantiateViewControllerWithIdentifier(indentifer) as MoneyManagerViewController
+                self.presentViewController(adv, animated: true, completion: nil)
+            }else if row == 1{
+                indentifer = "financeManagerViewController"
+                var adv = self.storyboard?.instantiateViewControllerWithIdentifier(indentifer) as FinanceManagerViewController
+                self.presentViewController(adv, animated: true, completion: nil)
+            }else if row == 2{
+                indentifer = "myBanksViewController"
+                var adv = self.storyboard?.instantiateViewControllerWithIdentifier(indentifer) as MyBanksViewController
+                self.presentViewController(adv, animated: true, completion: nil)
+            }
+        case 2 :
+            if row == 0{
+                indentifer = "accountSafeViewController"
+                var adv = self.storyboard?.instantiateViewControllerWithIdentifier(indentifer) as AccountSafeViewController
+                self.presentViewController(adv, animated: true, completion: nil)
+            }else {
+                showAlert()
+            }
+        default:
+            indentifer = nil
+        }
+    }
+    
+    
+    func showAlert(){
+        let alert:SCLAlertView = SCLAlertView()
+        txt = alert.addTextField(title: "请输入您的登录密码")
+        //将textField的代理交由本控制器管理
+        self.txt.delegate = self
+        alert.addButton("取消"){
+            println("您按了取消")
+            alert.hideView()
+        }
+        alert.addButton("确定"){
+            println("您按了确定，登录密码为：\(self.txt.text)")
+            //alert.hideView()
+            //此处执行跳转页面的操作
+//            var tvc:TempViewController = self.storyboard?.instantiateViewControllerWithIdentifier("newPage") as TempViewController
+//            self.presentViewController(tvc, animated: true, completion: nil)
+        }
+        alert.showEdit("身份验证", subTitle: "")
     }
 }
 

@@ -7,16 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E906136A1ABA619600F799EA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90613691ABA619600F799EA /* DetailViewController.swift */; };
 		E95DD7E51AB2D2470011311E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E95DD7E31AB2D2470011311E /* Main.storyboard */; };
 		E96B1E731AB6BFB300C61870 /* AllListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96B1E721AB6BFB300C61870 /* AllListViewController.swift */; };
+		E98EE13F1ABACF6A00CAE127 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EE13E1ABACF6A00CAE127 /* SCLAlertView.swift */; };
+		E98EE1411ABAD02200CAE127 /* PersonCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EE1401ABAD02200CAE127 /* PersonCenterViewController.swift */; };
+		E98EE1431ABAD04100CAE127 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EE1421ABAD04100CAE127 /* DetailViewController.swift */; };
+		E98EE1451ABAD0CF00CAE127 /* TransRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EE1441ABAD0CF00CAE127 /* TransRecordViewController.swift */; };
+		E98EE1471ABAD0F100CAE127 /* BindPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EE1461ABAD0F100CAE127 /* BindPhoneViewController.swift */; };
+		E98EE1491ABAD10900CAE127 /* FinanceManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EE1481ABAD10900CAE127 /* FinanceManagerViewController.swift */; };
+		E98EE14B1ABAD11B00CAE127 /* MoneyManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EE14A1ABAD11B00CAE127 /* MoneyManagerViewController.swift */; };
+		E98EE14D1ABAD11F00CAE127 /* MyBanksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EE14C1ABAD11F00CAE127 /* MyBanksViewController.swift */; };
+		E98EE14F1ABAD12600CAE127 /* RealNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EE14E1ABAD12600CAE127 /* RealNameViewController.swift */; };
+		E98EE1511ABAD12B00CAE127 /* ReturnSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EE1501ABAD12B00CAE127 /* ReturnSearchViewController.swift */; };
+		E98EE1531ABAD13300CAE127 /* TradePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EE1521ABAD13300CAE127 /* TradePasswordViewController.swift */; };
+		E98EE1571ABAD14800CAE127 /* AccountDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EE1561ABAD14800CAE127 /* AccountDetailViewController.swift */; };
+		E98EE1591ABAD14D00CAE127 /* AccountSafeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EE1581ABAD14D00CAE127 /* AccountSafeViewController.swift */; };
 		E9C54E061AB7BCD400D4722C /* LendDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C54E051AB7BCD400D4722C /* LendDetailViewController.swift */; };
 		E9D6604D1AB1313B0020982D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D6604C1AB1313B0020982D /* AppDelegate.swift */; };
 		E9D6604F1AB1313B0020982D /* LendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D6604E1AB1313B0020982D /* LendViewController.swift */; };
 		E9D660541AB1313B0020982D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9D660531AB1313B0020982D /* Images.xcassets */; };
 		E9D660571AB1313B0020982D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D660551AB1313B0020982D /* LaunchScreen.xib */; };
 		E9D660631AB1313B0020982D /* ____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D660621AB1313B0020982D /* ____Tests.swift */; };
-		E9EEC97C1AB687C700E09442 /* PersonCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EEC97B1AB687C700E09442 /* PersonCenterViewController.swift */; };
 		E9EEC97E1AB6A56600E09442 /* aaa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9EEC97D1AB6A56600E09442 /* aaa.jpg */; };
 /* End PBXBuildFile section */
 
@@ -31,9 +42,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E90613691ABA619600F799EA /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		E95DD7E41AB2D2470011311E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E96B1E721AB6BFB300C61870 /* AllListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllListViewController.swift; sourceTree = "<group>"; };
+		E98EE13E1ABACF6A00CAE127 /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
+		E98EE1401ABAD02200CAE127 /* PersonCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCenterViewController.swift; sourceTree = "<group>"; };
+		E98EE1421ABAD04100CAE127 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E98EE1441ABAD0CF00CAE127 /* TransRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransRecordViewController.swift; sourceTree = "<group>"; };
+		E98EE1461ABAD0F100CAE127 /* BindPhoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindPhoneViewController.swift; sourceTree = "<group>"; };
+		E98EE1481ABAD10900CAE127 /* FinanceManagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinanceManagerViewController.swift; sourceTree = "<group>"; };
+		E98EE14A1ABAD11B00CAE127 /* MoneyManagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyManagerViewController.swift; sourceTree = "<group>"; };
+		E98EE14C1ABAD11F00CAE127 /* MyBanksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyBanksViewController.swift; sourceTree = "<group>"; };
+		E98EE14E1ABAD12600CAE127 /* RealNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealNameViewController.swift; sourceTree = "<group>"; };
+		E98EE1501ABAD12B00CAE127 /* ReturnSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReturnSearchViewController.swift; sourceTree = "<group>"; };
+		E98EE1521ABAD13300CAE127 /* TradePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradePasswordViewController.swift; sourceTree = "<group>"; };
+		E98EE1561ABAD14800CAE127 /* AccountDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountDetailViewController.swift; sourceTree = "<group>"; };
+		E98EE1581ABAD14D00CAE127 /* AccountSafeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountSafeViewController.swift; sourceTree = "<group>"; };
 		E9C54E051AB7BCD400D4722C /* LendDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LendDetailViewController.swift; sourceTree = "<group>"; };
 		E9D660471AB1313B0020982D /* 盛世财富.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "盛世财富.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D6604B1AB1313B0020982D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,7 +67,6 @@
 		E9D6605C1AB1313B0020982D /* 盛世财富Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "盛世财富Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D660611AB1313B0020982D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9D660621AB1313B0020982D /* ____Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "____Tests.swift"; sourceTree = "<group>"; };
-		E9EEC97B1AB687C700E09442 /* PersonCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCenterViewController.swift; sourceTree = "<group>"; };
 		E9EEC97D1AB6A56600E09442 /* aaa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aaa.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +100,7 @@
 		E91E81311AB2794D000C5FD3 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				E98EE13E1ABACF6A00CAE127 /* SCLAlertView.swift */,
 				E9EEC97D1AB6A56600E09442 /* aaa.jpg */,
 				E9D6604C1AB1313B0020982D /* AppDelegate.swift */,
 			);
@@ -87,11 +110,10 @@
 		E91E81321AB27956000C5FD3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E9EEC97B1AB687C700E09442 /* PersonCenterViewController.swift */,
+				E98EE15A1ABAD3EC00CAE127 /* PersonCenter */,
 				E9D6604E1AB1313B0020982D /* LendViewController.swift */,
 				E96B1E721AB6BFB300C61870 /* AllListViewController.swift */,
 				E9C54E051AB7BCD400D4722C /* LendDetailViewController.swift */,
-				E90613691ABA619600F799EA /* DetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -109,6 +131,25 @@
 				E9D660531AB1313B0020982D /* Images.xcassets */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		E98EE15A1ABAD3EC00CAE127 /* PersonCenter */ = {
+			isa = PBXGroup;
+			children = (
+				E98EE1581ABAD14D00CAE127 /* AccountSafeViewController.swift */,
+				E98EE1561ABAD14800CAE127 /* AccountDetailViewController.swift */,
+				E98EE1521ABAD13300CAE127 /* TradePasswordViewController.swift */,
+				E98EE1501ABAD12B00CAE127 /* ReturnSearchViewController.swift */,
+				E98EE14E1ABAD12600CAE127 /* RealNameViewController.swift */,
+				E98EE14C1ABAD11F00CAE127 /* MyBanksViewController.swift */,
+				E98EE14A1ABAD11B00CAE127 /* MoneyManagerViewController.swift */,
+				E98EE1481ABAD10900CAE127 /* FinanceManagerViewController.swift */,
+				E98EE1461ABAD0F100CAE127 /* BindPhoneViewController.swift */,
+				E98EE1441ABAD0CF00CAE127 /* TransRecordViewController.swift */,
+				E98EE1421ABAD04100CAE127 /* DetailViewController.swift */,
+				E98EE1401ABAD02200CAE127 /* PersonCenterViewController.swift */,
+			);
+			name = PersonCenter;
 			sourceTree = "<group>";
 		};
 		E9D6603E1AB1313B0020982D = {
@@ -268,12 +309,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E98EE1591ABAD14D00CAE127 /* AccountSafeViewController.swift in Sources */,
+				E98EE1571ABAD14800CAE127 /* AccountDetailViewController.swift in Sources */,
+				E98EE1451ABAD0CF00CAE127 /* TransRecordViewController.swift in Sources */,
 				E9C54E061AB7BCD400D4722C /* LendDetailViewController.swift in Sources */,
+				E98EE1471ABAD0F100CAE127 /* BindPhoneViewController.swift in Sources */,
+				E98EE1491ABAD10900CAE127 /* FinanceManagerViewController.swift in Sources */,
+				E98EE14B1ABAD11B00CAE127 /* MoneyManagerViewController.swift in Sources */,
 				E96B1E731AB6BFB300C61870 /* AllListViewController.swift in Sources */,
-				E906136A1ABA619600F799EA /* DetailViewController.swift in Sources */,
+				E98EE14F1ABAD12600CAE127 /* RealNameViewController.swift in Sources */,
 				E9D6604F1AB1313B0020982D /* LendViewController.swift in Sources */,
-				E9EEC97C1AB687C700E09442 /* PersonCenterViewController.swift in Sources */,
+				E98EE1531ABAD13300CAE127 /* TradePasswordViewController.swift in Sources */,
+				E98EE13F1ABACF6A00CAE127 /* SCLAlertView.swift in Sources */,
+				E98EE1411ABAD02200CAE127 /* PersonCenterViewController.swift in Sources */,
 				E9D6604D1AB1313B0020982D /* AppDelegate.swift in Sources */,
+				E98EE14D1ABAD11F00CAE127 /* MyBanksViewController.swift in Sources */,
+				E98EE1511ABAD12B00CAE127 /* ReturnSearchViewController.swift in Sources */,
+				E98EE1431ABAD04100CAE127 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
